@@ -1,6 +1,6 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT'].'/tugas/controller/koneksi.php';
-  include $_SERVER['DOCUMENT_ROOT'].'/tugas/model/user.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/controller/koneksi.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/model/user.php';
   $user = new user($conn);
 
   // $user->store('reshap0318','12345678','Reinaldo Shandev Pratama',1);

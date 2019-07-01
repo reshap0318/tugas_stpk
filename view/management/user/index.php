@@ -1,7 +1,7 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/tugas/blank.php';
+include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/blank.php';
 
-include $_SERVER['DOCUMENT_ROOT'].'/tugas/model/user.php';
+include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/model/user.php';
 $user = new user($conn);
 ?>
 
@@ -11,7 +11,7 @@ $user = new user($conn);
   if(isset($hak_akses)){
     if($hak_akses==3){
       array_push($_SESSION['pesan'],['eror','Anda Tidak Memiliki Akses Kesini']);
-      header("location:/tugas/view/");
+      header("location:/tb_pbd_sp/view/");
     }
   }
 
@@ -51,7 +51,7 @@ Users Management
                       <td><?php if($data['hak_akses'] == 1 ){echo "Admin";}elseif($data['hak_akses'] == 2){echo "Pemilik";}elseif($data['hak_akses'] == 3){echo "Peminjam";}?></td>
                       <td style="width:100px">
                         <?php if($hak_akses==1 || $hak_akses==2){ ?>
-                        <a href="/tugas/view/management/user/edit.php?username=<?php echo $data['username']; ?>" class="btn btn-primary btn-mini waves-effect waves-light">Edit</a>
+                        <a href="/tb_pbd_sp/view/management/user/edit.php?username=<?php echo $data['username']; ?>" class="btn btn-primary btn-mini waves-effect waves-light">Edit</a>
                         <?php } ?>
                         <?php if($hak_akses==1 || $hak_akses==2){ ?>
                         <a href="#" class="btn btn-danger btn-mini waves-effect waves-light" onclick="hapus('<?php echo $data['username']; ?>')">Delete</a>
@@ -61,7 +61,7 @@ Users Management
                 <?php } ?>
               </tbody>
           </table>
-<form class="" id="formdelete" style="display:none" action="/tugas/controller/userController.php?aksi=delete" method="post">
+<form class="" id="formdelete" style="display:none" action="/tb_pbd_sp/controller/userController.php?aksi=delete" method="post">
   <input type="text" name="username" value="" id="delete_id">
 </form>
       </div>
@@ -83,7 +83,7 @@ Users Management
             className: 'btn-success',
             action: function(e, dt, node, config)
             {
-              window.location.assign("/tugas/view/management/user/create.php");
+              window.location.assign("/tb_pbd_sp/view/management/user/create.php");
             }
         },
         {

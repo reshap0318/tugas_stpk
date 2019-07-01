@@ -1,5 +1,5 @@
 <?php
   session_start();
   session_destroy();
-  header('location:/tugas/view/auth/login.php');
+  header('location:/tb_pbd_sp/view/auth/login.php');
 ?>

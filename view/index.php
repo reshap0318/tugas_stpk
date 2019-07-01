@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/tugas/blank.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/blank.php'; ?>
 
 <?php startblock('title') ?> Dashboard <?php endblock() ?>
 

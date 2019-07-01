@@ -31,10 +31,13 @@
           }else{
             array_push($_SESSION['pesan'],['berhasil','Berhasil Menambahkan User']);
           }
-          header("location:/tugas/view/management/user");
+          header("location:/tb_pbd_sp/view/management/user");
         }else{
-          mysqli_query($this->koneksi,$sql);
-          echo "<br>Berhasil Menambahkan Data User ".$nama;
+          if(mysqli_query($this->koneksi,$sql)){
+            echo "<br>Berhasil Menambahkan Data User ".$nama;
+          }else{
+            echo "Gagal Menambahkan User";
+          }
         }
     }
 
@@ -68,7 +71,7 @@
         }else{
           array_push($_SESSION['pesan'],['berhasil','Berhasil Merubah User']);
         }
-        header("location:/tugas/view/management/user");
+        header("location:/tb_pbd_sp/view/management/user");
     }
 
     function delete($username = '')
@@ -85,7 +88,7 @@
         }else{
             array_push($_SESSION['pesan'],['eror','username tidak ditemukan']);
         }
-        header("location:/tugas/view/management/user");
+        header("location:/tb_pbd_sp/view/management/user");
     }
 
     function empty()

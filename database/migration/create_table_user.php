@@ -23,7 +23,7 @@
 
       function drop()
       {
-          $sql = "DROP TABLE `tugas`.`users`";
+          $sql = "DROP TABLE `tb_625`.`users`";
           if(!mysqli_query($this->koneksi,$sql)){
             echo "Gagal Menghapus Table User<br>".mysqli_error($this->koneksi)."<br>";
           }else{

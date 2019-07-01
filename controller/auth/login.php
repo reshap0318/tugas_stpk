@@ -1,12 +1,12 @@
 <?php
 
-  include $_SERVER['DOCUMENT_ROOT'].'/tugas/controller/koneksi.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/controller/koneksi.php';
 
   $aksi = 'login';
   $username = null;
   $password = null;
   $status = null;
-  $link = '/tugas/view/';
+  $link = '/tb_pbd_sp/view/';
 
   if($aksi=='login'){
     if(isset($_POST['username'])){
@@ -44,19 +44,19 @@
       array_push($_SESSION['pesan'],[$status,'Berhasil Login']);
 
       if($status==0){
-        $link = '/tugas/view/auth/login.php';
+        $link = '/tb_pbd_sp/view/auth/login.php';
         $status = 'eror';
         array_push($_SESSION['pesan'],[$status,'Username Atau Password Salah']);
       }
     }
     else{
-      $link = '/tugas/view/auth/login.php';
+      $link = '/tb_pbd_sp/view/auth/login.php';
       $status = 'eror';
       array_push($_SESSION['pesan'],[$status,'Terjadi Eror']);
     }
   }
   else{
-    $link = '/tugas/view/auth/login.php';
+    $link = '/tb_pbd_sp/view/auth/login.php';
     $status = 'eror';
     array_push($_SESSION['pesan'],[$status,'Link Tidak ditemukan']);
   }

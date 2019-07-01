@@ -3,7 +3,7 @@
   session_start();
   if(isset($_SESSION['status'])){
     if($_SESSION['status']==1){
-      header("location:/tugas/view/");
+      header("location:/tb_pbd_sp/view/");
     }else{
       session_destroy();
     }
@@ -24,16 +24,16 @@
       <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="#">
       <!-- Favicon icon -->
-      <link rel="icon" href="/tugas/img/lea-logo.png" type="image/x-icon">
+      <link rel="icon" href="/tb_pbd_sp/img/lea-logo.png" type="image/x-icon">
       <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="/tugas/editor/bower_components/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="/tb_pbd_sp/editor/bower_components/bootstrap/css/bootstrap.min.css">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="/tugas/editor/assets/icon/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="/tb_pbd_sp/editor/assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="/tugas/editor/assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="/tb_pbd_sp/editor/assets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="/tugas/editor/assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/tb_pbd_sp/editor/assets/css/style.css">
   </head>
 
   <body class="fix-menu">
@@ -62,9 +62,9 @@
               <div class="row">
                   <div class="col-sm-12">
                       <!-- Authentication card start -->
-                          <form method="POST" action="/tugas/controller/auth/login.php" aria-label="login" class="md-float-material form-material">
+                          <form method="POST" action="/tb_pbd_sp/controller/auth/login.php" aria-label="login" class="md-float-material form-material">
                               <div class="text-center">
-                                  <img src="/tugas/editor/assets/images/logo.png" alt="logo.png">
+                                  <img src="/tb_pbd_sp/editor/assets/images/logo.png" alt="logo.png">
                               </div>
                               <div class="auth-box card">
                                   <div class="card-block">
@@ -107,7 +107,7 @@
                                               <p class="text-inverse text-left"><a href="http://lea.si.fti.unand.ac.id"><b class="f-w-600">Go to my website</b></a></p>
                                           </div>
                                           <div class="col-md-2">
-                                              <img src="/tugas/img/lea-logo-small.png" alt="small-logo.png">
+                                              <img src="/tb_pbd_sp/img/lea-logo-small.png" alt="small-logo.png">
                                           </div>
                                       </div>
                                   </div>
@@ -121,21 +121,21 @@
           </div>
           <!-- end of container-fluid -->
       </section>
-      <script type="text/javascript" src="/tugas/editor/bower_components/jquery/js/jquery.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/popper.js/js/popper.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/jquery/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/popper.js/js/popper.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/bootstrap/js/bootstrap.min.js"></script>
       <!-- jquery slimscroll js -->
-      <script type="text/javascript" src="/tugas/editor/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
       <!-- modernizr js -->
-      <script type="text/javascript" src="/tugas/editor/bower_components/modernizr/js/modernizr.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/modernizr/js/css-scrollbars.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/modernizr/js/modernizr.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/modernizr/js/css-scrollbars.js"></script>
       <!-- i18next.min.js -->
-      <script type="text/javascript" src="/tugas/editor/bower_components/i18next/js/i18next.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-      <script type="text/javascript" src="/tugas/editor/assets/js/common-pages.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/i18next/js/i18next.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+      <script type="text/javascript" src="/tb_pbd_sp/editor/assets/js/common-pages.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>
