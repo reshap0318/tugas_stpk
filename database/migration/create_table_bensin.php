@@ -13,7 +13,7 @@
 
       function create()
       {
-        $sql = "";
+        $sql = "CREATE TABLE bensin (kode_bensin VARCHAR(1) NOT NULL, nama VARCHAR(8) NOT NULL, harga INT NOT NULL, PRIMARY KEY (kode_bensin));";
         if(!mysqli_query($this->koneksi,$sql)){
           echo "<br>Gagal Membuat Table Bensin<br>".mysqli_error($this->koneksi);
         }else{
@@ -23,7 +23,7 @@
 
       function drop()
       {
-          $sql = "DROP TABLE `tb_625`.`bensin`";
+          $sql = "DROP TABLE `bensin`";
           if(!mysqli_query($this->koneksi,$sql)){
             echo "Gagal Menghapus Table Bensin<br>".mysqli_error($this->koneksi)."<br>";
           }else{

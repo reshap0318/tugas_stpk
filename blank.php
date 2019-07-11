@@ -189,84 +189,57 @@
                                     <span class="pcoded-mtext">Users</span>
                                 </a>
                             </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/satuan-kerja">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Satuan Kerja</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/bensin">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Bensin</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/lokasi">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Lokasi</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/waktu">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Waktu</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/merek-kendaraan">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Merek Kendaraan</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tb_pbd_sp/view/management/kendaraan">
+                                    <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                    <span class="pcoded-mtext">Kendaraan</span>
+                                </a>
+                            </li>
                         </ul>
                       <?php } ?>
                         <div class="pcoded-navigatio-lavel">General</div>
                         <ul class="pcoded-item pcoded-left-item">
-                          <li class="pcoded-hasmenu ">
-                              <a href="javascript:void(0)">
-                                  <span class="pcoded-micon"><i class="feather icon-list"></i></span>
-                                  <span class="pcoded-mtext">Tugas</span>
+                          <li class="">
+                              <a href="/tb_pbd_sp/view/management/Pemesanan">
+                                  <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                  <span class="pcoded-mtext">Pemesanan</span>
                               </a>
-                              <ul class="pcoded-submenu">
-                                  <li class="pcoded-hasmenu ">
-                                      <a href="javascript:void(0)">
-                                          <span class="pcoded-mtext" >STPK</span>
-                                      </a>
-                                      <ul class="pcoded-submenu">
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb_pbd_sp/stpk/1">
-                                                  <span class="pcoded-mtext" >1</span>
-                                              </a>
-                                          </li>
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb_pbd_sp/stpk/2">
-                                                  <span class="pcoded-mtext" >2</span>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </li>
-                                  <li class="">
-                                      <a href="javascript:void(0)">
-                                          <span class="pcoded-mtext" >dll</span>
-                                      </a>
-                                  </li>
-                              </ul>
                           </li>
-                          <li class="pcoded-hasmenu ">
-                              <a href="javascript:void(0)">
-                                  <span class="pcoded-micon"><i class="feather icon-list"></i></span>
-                                  <span class="pcoded-mtext">TB</span>
+                          <li class="">
+                              <a href="/tb_pbd_sp/view/management/lokasi-kendaraan">
+                                  <span class="pcoded-micon"><i class="icofont icofont-users"></i></span>
+                                  <span class="pcoded-mtext">Lokasi Kendaraan</span>
                               </a>
-                              <ul class="pcoded-submenu">
-                                  <li class="">
-                                      <a href="http://localhost/tb_pbd/controller/auth/logout.php">
-                                          <span class="pcoded-mtext" >PBD</span>
-                                      </a>
-                                  </li>
-                                  <li class="pcoded-hasmenu ">
-                                      <a href="javascript:void(0)">
-                                          <span class="pcoded-mtext" >GV</span>
-                                      </a>
-                                      <ul class="pcoded-submenu">
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb/gv/1">
-                                                  <span class="pcoded-mtext" >1</span>
-                                              </a>
-                                          </li>
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb/gv/2">
-                                                  <span class="pcoded-mtext" >2</span>
-                                              </a>
-                                          </li>
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb/gv/3">
-                                                  <span class="pcoded-mtext" >3</span>
-                                              </a>
-                                          </li>
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb/gv/4">
-                                                  <span class="pcoded-mtext" >4</span>
-                                              </a>
-                                          </li>
-                                          <li class="">
-                                              <a href="/tb_pbd_sp/view/tb/gv/5">
-                                                  <span class="pcoded-mtext" >5</span>
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </li>
-                              </ul>
                           </li>
                       </ul>
                     </div>

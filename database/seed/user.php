@@ -4,8 +4,8 @@
   {
 
     private $user = [
-      ['1611522012','1611522012','Reinaldo Shandev Pratama',1],
-      ['1611521006','1611522012','Annisa Aulia Khaira',1]
+      ['1611522012','Reinaldo Shandev Pratama',1,'L1'],
+      ['1611521006','Annisa Aulia Khaira',1,'L2']
     ];
 
     function __construct()
@@ -15,9 +15,8 @@
         $user = new user($conn);
 
         $user->empty();
-
         foreach ($this->user as $data) {
-          $user->store($data[0],$data[1],$data[2],$data[3],false);
+          $user->store($data[0],$data[1],$data[0],$data[0],null, null, null, null, $data[2],$data[3],false);
         }
     }
 

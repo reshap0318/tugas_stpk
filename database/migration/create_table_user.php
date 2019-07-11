@@ -13,7 +13,7 @@
 
       function create()
       {
-        $sql = "CREATE TABLE `users` (`username` varchar(10) NOT NULL PRIMARY KEY,`nama` varchar(25) NOT NULL,`password` varchar(191) NOT NULL,`hak_akses` int(2) NOT NULL);";
+        $sql = "CREATE TABLE users ( nik CHAR(16) NOT NULL, nama VARCHAR(30) NOT NULL, username VARCHAR(10) NOT NULL, kota_lahir VARCHAR(20), tanggal_lahir DATE, alamat VARCHAR(300) NOT NULL, no_telp VARCHAR(13) NOT NULL, status VARCHAR(1) NOT NULL, kode_satker CHAR(2) NOT NULL, PRIMARY KEY (nik));ALTER TABLE users ADD CONSTRAINT satker_users_fk FOREIGN KEY (kode_satker) REFERENCES satker (kode_satker) ON DELETE cascade ON UPDATE cascade;";
         if(!mysqli_query($this->koneksi,$sql)){
           echo "<br>Gagal Membuat Table User<br>".mysqli_error($this->koneksi);
         }else{
@@ -23,7 +23,7 @@
 
       function drop()
       {
-          $sql = "DROP TABLE `tb_625`.`users`";
+          $sql = "DROP TABLE `users`";
           if(!mysqli_query($this->koneksi,$sql)){
             echo "Gagal Menghapus Table User<br>".mysqli_error($this->koneksi)."<br>";
           }else{

@@ -28,8 +28,8 @@ Edit Users
     <div class="card-block">
         <form id="second" action="/tb_pbd_sp/controller/userController.php?aksi=update" method="post" novalidate>
             <?php
-              $username = $_GET['username'];
-              foreach ($user->data($username) as $data) {
+              $nik = $_GET['nik'];
+              foreach ($user->data($nik) as $data) {
             ?>
             <?php include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/view/management/user/_field.php'; ?>
 

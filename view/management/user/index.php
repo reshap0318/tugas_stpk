@@ -51,19 +51,19 @@ Users Management
                       <td><?php if($data['hak_akses'] == 1 ){echo "Admin";}elseif($data['hak_akses'] == 2){echo "Pemilik";}elseif($data['hak_akses'] == 3){echo "Peminjam";}?></td>
                       <td style="width:100px">
                         <?php if($hak_akses==1 || $hak_akses==2){ ?>
-                        <a href="/tb_pbd_sp/view/management/user/edit.php?username=<?php echo $data['username']; ?>" class="btn btn-primary btn-mini waves-effect waves-light">Edit</a>
+                        <a href="/tb_pbd_sp/view/management/user/edit.php?nik=<?php echo $data['nik']; ?>" class="btn btn-primary btn-mini waves-effect waves-light">Edit</a>
                         <?php } ?>
                         <?php if($hak_akses==1 || $hak_akses==2){ ?>
-                        <a href="#" class="btn btn-danger btn-mini waves-effect waves-light" onclick="hapus('<?php echo $data['username']; ?>')">Delete</a>
+                        <a href="#" class="btn btn-danger btn-mini waves-effect waves-light" onclick="hapus('<?php echo $data['nik']; ?>')">Delete</a>
                         <?php } ?>
                       </td>
                   </tr>
                 <?php } ?>
               </tbody>
           </table>
-<form class="" id="formdelete" style="display:none" action="/tb_pbd_sp/controller/userController.php?aksi=delete" method="post">
-  <input type="text" name="username" value="" id="delete_id">
-</form>
+          <form class="" id="formdelete" style="display:none" action="/tb_pbd_sp/controller/userController.php?aksi=delete" method="post">
+            <input type="text" name="nik" value="" id="delete_id">
+          </form>
       </div>
   </div>
 </div>

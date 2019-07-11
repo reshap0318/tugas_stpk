@@ -1,6 +1,6 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp_sp/controller/koneksi.php';
-  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp_sp/model/user.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/controller/koneksi.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/tb_pbd_sp/model/user.php';
   $user = new user($conn);
 
   if($_SESSION['status'] == 1){
@@ -22,14 +22,14 @@
   }
 
   if($aksi=='create'){
-    $user->store($_POST['username'],$_POST['password'],$_POST['nama'],$_POST['hak_akses']);
+    $user->store($_POST['nik'],$_POST['nama'],$_POST['username'],$_POST['password'],$_POST['kota_lahir'],$_POST['tanggal_lahir'],$_POST['alamat'],$_POST['no_telp'],$_POST['hak_akses'],$_POST['kode_satker']);
   }
 
   elseif($aksi=='update'){
-    $user->update($_POST['last_username'],$_POST['username'],$_POST['password'],$_POST['nama'],$_POST['hak_akses']);
+    $user->update($_POST['last_nik'],$_POST['nik'],$_POST['nama'],$_POST['username'],$_POST['password'],$_POST['kota_lahir'],$_POST['tanggal_lahir'],$_POST['alamat'],$_POST['no_telp'],$_POST['hak_akses'],$_POST['kode_satker']);
   }
 
   elseif($aksi=='delete'){
-    $user->delete($_POST['username']);
+    $user->delete($_POST['nik']);
   }
 ?>
